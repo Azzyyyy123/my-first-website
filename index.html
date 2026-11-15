@@ -1,227 +1,107 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Home | Azeezah's Portfolio</title>
-
-    <meta name="description" content="Explore Azeezah's professional portfolio, skills, experience and projects in Business Information Technology.">
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Omobolanle Ishola – Business Information Technology Student</title>
+  <meta name="description" content="Portfolio of Omobolanle Ishola, a Business Information Technology student interested in data, web development and business systems.">
+  <!-- Fonts: Bricolage Grotesque (headings) and Source Serif 4 (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;display=swap">
+  <!-- Shared external stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+  <div class="wrap">
 
-    <!-- Website Header -->
-    <header class="header">
-
-        <div class="logo">AZ.</div>
-
-        <!-- Navigation Menu -->
-        <nav aria-label="Main navigation">
-            <a href="index.html" class="active">Home</a>
-            <a href="contact.html">Contact</a>
-            <a href="skills.html">Skills</a>
-            <a href="projects.html">Projects</a>
-            <a href="restaurant.html">Restaurant Project</a>
-        </nav>
-
+    <!-- Site header and main navigation (same on all five pages) -->
+    <header class="site-header">
+      <a href="index.html">Omobolanle Ishola</a>
+      <nav aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="skills.html">Skills</a>
+        <a href="showcase.html">Showcase</a>
+        <a href="problem-solving.html">Problem-Solving</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
 
-
-    <!-- Main Home Page Content -->
     <main>
+      <!-- Hero: name, professional summary and portrait -->
+      <div class="hero">
+        <div>
+          <h1>Hi, I’m Omobolanle Ishola.</h1>
+          <p>I’m a Business Information Technology student who builds practical websites and systems that help organisations work better. I combine business thinking with hands-on coding in HTML, CSS and JavaScript.</p>
+          <a class="btn" href="showcase.html">See my projects</a>
+          <a class="btn btn-alt" href="contact.html">Contact me</a>
+        </div>
+        <div class="portrait">
+          <!-- Replace photo-placeholder.svg with your own photo (keep the alt text meaningful) -->
+          <img src="images/photo-placeholder.svg" alt="Portrait of Omobolanle Ishola" width="600" height="600">
+        </div>
+      </div>
 
-        <!-- Introduction Section -->
-        <section class="hero">
+      <!-- Career background -->
+      <section id="background">
+        <div class="cols">
+          <h2>Career background</h2>
+          <div>
+            <p>I’m studying Business Information Technology at the University of Salford, where I’ve learned how organisations use data, software and web technologies to solve business problems.</p>
+            <p>[Add your work experience or placeholder here, for example a part-time job, internship or volunteering role, and what it taught you.]</p>
+          </div>
+        </div>
+      </section>
 
-            <div class="hero-content">
+      <!-- Interests -->
+      <section id="interests">
+        <div class="cols">
+          <h2>Interests</h2>
+          <ul class="item-list">
+            <li>
+              <h3>Web development</h3>
+              <p>Building clear, accessible websites by hand and learning something new with every project.</p>
+            </li>
+            <li>
+              <h3>Data and analysis</h3>
+              <p>Turning raw numbers into answers that help people make better decisions.</p>
+            </li>
+            <li>
+              <h3>Business systems</h3>
+              <p>Looking at how companies run their processes and where technology can improve them.</p>
+            </li>
+            <li>
+              <h3>Outside of study</h3>
+              <p>[Add what you enjoy away from the screen, such as music, sport, reading or travel.]</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-                <p class="intro-label">
-                    BUSINESS INFORMATION TECHNOLOGY STUDENT
-                </p>
+      <!-- Future goals -->
+      <section id="goals">
+        <div class="cols">
+          <h2>Future goals</h2>
+          <div>
+            <p>After graduating, I want to work as [your target role, e.g. business analyst, web developer or IT consultant], helping organisations turn their digital ideas into working solutions.</p>
+            <p>In the short term, I’m building my skills in front-end development and version control, and growing this portfolio with projects that show how I solve real business problems.</p>
+          </div>
+        </div>
+      </section>
 
-                <h1>
-                    Hello, I'm <span>Azeezah.</span>
-                </h1>
-
-                <h2>
-                    Interested in technology,
-                    data and digital innovation.
-                </h2>
-
-                <p class="hero-description">
-                    I am a second-year Business Information
-                    Technology student with an interest in
-                    understanding how technology can improve
-                    business processes and solve real-world
-                    problems.
-                </p>
-
-                <p class="hero-description">
-                    I enjoy developing new digital skills,
-                    exploring different technologies and
-                    applying what I learn through practical
-                    projects and experiences.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="projects.html" class="primary-button">
-                        View My Projects
-                    </a>
-
-                    <a href="contact.html" class="secondary-button">
-                        Get In Touch
-                    </a>
-
-                </div>
-
-            </div>
-
-            <div class="hero-image">
-
-                <div class="image-placeholder">
-                    <p>My Portfolio</p>
-                    <span>Technology | Creativity | Growth</span>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- About Me Section -->
-        <section class="about-section">
-
-            <p class="section-label">GET TO KNOW ME</p>
-
-            <h2>About Me</h2>
-
-            <p>
-                I am currently studying Business Information
-                Technology at university, where I am developing
-                my understanding of business operations,
-                information systems and digital technologies.
-            </p>
-
-            <p>
-                Through my studies, I have gained practical
-                experience using tools such as Power BI,
-                Excel and Python. I have also worked with
-                databases and explored data analysis and
-                visualisation.
-            </p>
-
-            <p>
-                Outside my academic studies, my employment
-                experience and involvement in my university's
-                Islamic Society have helped me develop
-                communication, teamwork, organisation and
-                problem-solving skills.
-            </p>
-
-        </section>
-
-
-        <!-- Interests Section -->
-        <section class="interests-section">
-
-            <p class="section-label">WHAT I'M INTERESTED IN</p>
-
-            <h2>My Interests</h2>
-
-            <div class="interest-cards">
-
-                <article class="interest-card">
-                    <h3>Data & Analytics</h3>
-                    <p>
-                        Exploring data, identifying patterns
-                        and turning information into useful
-                        business insights.
-                    </p>
-                </article>
-
-                <article class="interest-card">
-                    <h3>Technology</h3>
-                    <p>
-                        Learning new technologies and
-                        understanding how digital solutions
-                        can improve everyday processes.
-                    </p>
-                </article>
-
-                <article class="interest-card">
-                    <h3>Web Development</h3>
-                    <p>
-                        Developing my HTML, CSS and JavaScript
-                        skills by creating functional and
-                        user-friendly websites.
-                    </p>
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- Career Goals Section -->
-        <section class="goals-section">
-
-            <p class="section-label">LOOKING AHEAD</p>
-
-            <h2>My Career Aspirations</h2>
-
-            <p>
-                My goal is to build a career in the technology
-                industry, particularly in areas such as Data
-                Analytics, Business Intelligence or Business
-                Analysis.
-            </p>
-
-            <p>
-                I am committed to continuously improving my
-                technical and professional skills, gaining
-                practical experience and working on projects
-                that allow me to apply technology to
-                meaningful business challenges.
-            </p>
-
-        </section>
-
-
-        <!-- Call to Action -->
-        <section class="contact-banner">
-
-            <h2>Let's Connect!</h2>
-
-            <p>
-                Feel free to explore my projects and learn
-                more about my skills and experience.
-            </p>
-
-            <a href="contact.html" class="primary-button">
-                Contact Me
-            </a>
-
-        </section>
-
+      <!-- Call to action -->
+      <section class="cta">
+        <h2>Take a look around</h2>
+        <p>See my skills, explore my projects, or get in touch if you’d like to work together.</p>
+        <a class="btn" href="skills.html">View my skills</a>
+        <a class="btn btn-alt" href="contact.html">Contact me</a>
+      </section>
     </main>
 
-
-    <!-- Website Footer -->
-    <footer class="footer">
-
-        <p>
-            &copy; 2026 Azeezah | Personal Digital Portfolio
-        </p>
-
-        <p>Designed and developed by Azeezah.</p>
-
+    <footer class="site-footer">
+      <p>© 2026 Omobolanle Ishola</p>
     </footer>
 
+  </div>
 </body>
 </html>
