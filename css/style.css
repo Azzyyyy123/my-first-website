@@ -531,21 +531,24 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 }
 .hero p { max-width: 34rem; margin: 0 0 2rem; color: var(--muted); font-size: 1.25rem; }
 
-/* Portrait: brown circle behind a rounded photo */
-.portrait { position: relative; height: 0; padding-bottom: 100%; }
-.portrait::before {
-  content: "";
+/* Portrait: photo cropped into a circle with a brown border */
+.portrait img {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: var(--accent);
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;  /* keeps faces in frame; change if your head is cut off */
   border-radius: 50%;
+  border: 6px solid var(--accent);
 }
 .portrait img {
   position: absolute;
-  top: 8%; left: 8%;
-  width: 86%; height: 86%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   object-fit: cover;
-  border-radius: 1.5rem;
+  object-position: center top;  /* keeps faces in frame; change if your head is cut off */
+  border-radius: 50%;
+  border: 6px solid var(--accent);
 }
 
 /* ---------- 5. Buttons ---------- */
