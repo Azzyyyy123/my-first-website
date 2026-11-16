@@ -27,7 +27,7 @@
     <main>
       <!-- Restaurant banner -->
       <div class="brand-banner">
-        <img src="images/itan-logo.svg" alt="Itan Kitchen logo" width="240" height="240">
+        <img src="images/itanlogo.png" alt="Itan Kitchen logo" width="240" height="240">
         <div>
           <h1>Itan Kitchen</h1>
           <p>A fictional modern Nigerian restaurant in Manchester. This page is my response to the restaurant digital transformation case study, written as the restaurant’s Chief Technology Officer.</p>
@@ -59,7 +59,7 @@
             <p><span class="tag">V</span> vegetarian <span class="tag">VG</span> vegan <span class="tag">GF</span> gluten-free <span class="tag">Spicy</span> hot. Please tell us about any allergies when you book.</p>
             <h3 class="subhead">Starters</h3>
             <ul class="item-list">
-              <li><h3>Suya cauliflower <span class="price">£7.50</span></h3><p>Roast cauliflower in a peanut and pepper spice glaze. <span class="tag">VG</span> Contains peanuts.</p></li>
+              <li><h3> Beef Suya <span class="price">£7.50</span></h3><p>Meat chops in a peanut and pepper spice glaze. Contains peanuts.</p></li>
               <li><h3>Moi moi <span class="price">£6.50</span></h3><p>Steamed black-eyed bean pudding with fresh pepper sauce. <span class="tag">VG</span> <span class="tag">GF</span></p></li>
               <li><h3>Pepper soup <span class="price">£8.00</span></h3><p>Aromatic broth with goat or mushroom. <span class="tag">GF</span> <span class="tag">Spicy</span></p></li>
             </ul>
@@ -67,7 +67,7 @@
             <ul class="item-list">
               <li><h3>Smoky jollof with grilled chicken <span class="price">£16.00</span></h3><p>Party-style rice cooked in roasted tomato and pepper base, with fried plantain. <span class="tag">GF</span></p></li>
               <li><h3>Egusi stew with pounded yam <span class="price">£17.00</span></h3><p>Melon seed and spinach stew with smoked fish. <span class="tag">Spicy</span></p></li>
-              <li><h3>Plantain and bean stew <span class="price">£14.00</span></h3><p>Slow-cooked beans with roast plantain and a coconut rice side. <span class="tag">VG</span> <span class="tag">GF</span></p></li>
+              <li><h3>Gizzard dodo <span class="price">£14.00</span></h3><p>Slow-cooked beans with roast plantain and a coconut rice side. <span class="tag">VG</span> <span class="tag">GF</span></p></li>
             </ul>
           </div>
         </div>
@@ -91,10 +91,10 @@
           <h2>Find us</h2>
           <div>
             <dl class="details">
-              <dt>Address</dt><dd>12 Example Street, Manchester M1 1AA (fictional)</dd>
-              <dt>Phone</dt><dd>0161 496 0123 (fictional)</dd>
+              <dt>Address</dt><dd>12 Example Street, Manchester M1 1AZ</dd>
+              <dt>Phone</dt><dd>0161 496 0123</dd>
               <dt>Email</dt><dd><a href="mailto:bookings@itankitchen.example">bookings@itankitchen.example</a></dd>
-              <dt>Opening hours</dt><dd>Tuesday to Sunday, 12:00 to 22:00. Closed Monday.</dd>
+              <dt>Opening hours</dt><dd>Monday to Sunday, 12:00 to 22:00. Closed Monday.</dd>
             </dl>
             <h3 class="subhead">Follow us</h3>
             <ul class="social-links">
@@ -192,23 +192,17 @@
         </div>
       </section>
 
-      <!-- Short explanation of design choices -->
-      <section id="design">
-        <div class="cols">
-          <h2>Design choices</h2>
-          <div>
-            <p>I used the warm brown and beige palette to suggest food and hospitality, and kept the layout simple so the menu and form are easy to read on a phone. Headings and labels use a bold sans-serif for clarity; the body text uses a serif for comfortable reading.</p>
-            <p>The form uses JavaScript to show only the fields that match the request, to check input, and to build the email with a mailto: link. A real system would send the message from a server so it works without the visitor’s email app; mailto: is a suitable choice for a prototype with no database. Semantic headings, labelled fields, visible keyboard focus, descriptive page titles and alt text support accessibility and basic SEO.</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
     <footer class="site-footer">
       <p>© 2026 Omobolanle Ishola. Itan Kitchen is a fictional restaurant created for coursework.</p>
     </footer>
 
   </div>
+
+  <dialog id="meal-photo-notice" class="meal-photo-notice" aria-labelledby="meal-photo-notice-title">
+    <h2 id="meal-photo-notice-title">Meal photos coming soon</h2>
+    <p>There are no pictures of the meals for now. This page will be updated with photos soon.</p>
+    <button class="btn" type="button" id="meal-photo-notice-dismiss">OK</button>
+  </dialog>
 
   <!-- Cookie reminder (shown on every visit; no cookies are set) -->
   <div id="cookie-banner" class="cookie-banner" role="region" aria-label="Cookie reminder">

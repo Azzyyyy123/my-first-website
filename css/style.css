@@ -193,6 +193,20 @@ h2 {
 .preview { background: var(--bg); border-radius: 0.5rem; padding: 1rem; white-space: pre-wrap; font-size: 0.95rem; margin-top: 1.25rem; }
 button.btn { border: 0; cursor: pointer; }
 
+/* Meal photo notice on the Problem-Solving page */
+.meal-photo-notice {
+  width: min(32rem, calc(100% - 2rem));
+  padding: 2rem;
+  color: var(--ink);
+  background: var(--bg);
+  border: 2px solid var(--line);
+  border-radius: 1rem;
+}
+.meal-photo-notice::backdrop { background: rgb(0 0 0 / 55%); }
+.meal-photo-notice h2 { margin-bottom: 1rem; }
+.meal-photo-notice p { margin: 0 0 1.5rem; }
+.meal-photo-notice button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+
 /* Cookie reminder banner */
 .cookie-banner { position: fixed; left: 0; right: 0; bottom: 0; background: var(--ink); color: var(--bg); padding: 1rem 1.5rem; z-index: 10; }
 .cookie-banner .inner { max-width: 64rem; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; }

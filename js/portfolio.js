@@ -28,6 +28,15 @@ if ("IntersectionObserver" in window && !reduceMotion) {
 (function () {
   "use strict";
 
+  var mealPhotoNotice = document.getElementById("meal-photo-notice");
+  var mealPhotoNoticeDismiss = document.getElementById("meal-photo-notice-dismiss");
+  if (mealPhotoNotice && mealPhotoNoticeDismiss) {
+    mealPhotoNotice.showModal();
+    mealPhotoNoticeDismiss.addEventListener("click", function () {
+      mealPhotoNotice.close();
+    });
+  }
+
   // Fictional address that receives messages (.example is a reserved test domain)
   var RESTAURANT_EMAIL = "bookings@itankitchen.example";
 
