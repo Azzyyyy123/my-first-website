@@ -49,6 +49,13 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .site-header a { text-decoration: none; }
 .site-header a:hover,
 .site-header a[aria-current="page"] { text-decoration: underline; }
+.site-header > a:first-child {
+  padding: 0.55rem 1.1rem;
+  color: var(--bg);
+  background: var(--accent);
+  border-radius: 999px;
+}
+.site-header > a:first-child:hover { text-decoration: none; }
 
 /* ---------- 4. Hero (top of Home page) ---------- */
 .hero {
